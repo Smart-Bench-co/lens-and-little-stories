@@ -19,7 +19,8 @@ export function Footer() {
         <div className="flex flex-col gap-2 text-sm">
           <span className="eyebrow mb-2 text-muted-foreground">Contact</span>
           <a href={`mailto:${site.email}`} className="link-line w-fit">{site.email}</a>
-          <a href={site.instagram} target="_blank" rel="noreferrer" className="link-line w-fit">Instagram {site.instagramHandle}</a>
+          <a href={site.phoneHref} className="link-line w-fit">{site.phone}</a>
+          <a href={site.instagram} target="_blank" rel="noreferrer" className="link-line w-fit">Instagram</a>
         </div>
       </div>
       <div className="container-x flex justify-between border-t py-6 eyebrow text-muted-foreground">
