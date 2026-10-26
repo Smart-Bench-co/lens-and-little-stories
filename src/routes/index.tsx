@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const featured = projects[1];
+  const featured = projects[1]!;
   return (
     <>
       {/* Hero */}
@@ -47,10 +47,10 @@ function Home() {
           <h2 className="display text-h2 max-w-3xl">A collection of <em>moments,</em> people, and places.</h2>
         </Reveal>
         <div className="mt-20 grid gap-x-10 gap-y-20 md:grid-cols-12">
-          <Reveal className="md:col-span-5"><ProjectTile p={projects[0]} index={0} /></Reveal>
-          <Reveal className="md:col-span-6 md:col-start-7 md:mt-40" delay={100}><ProjectTile p={projects[3]} index={1} /></Reveal>
-          <Reveal className="md:col-span-7 md:-mt-10"><ProjectTile p={projects[5]} index={2} className="md:max-w-[80%]" /></Reveal>
-          <Reveal className="md:col-span-4 md:col-start-9 md:mt-24" delay={100}><ProjectTile p={projects[4]} index={3} /></Reveal>
+          <Reveal className="md:col-span-5"><ProjectTile p={projects[0]!} index={0} /></Reveal>
+          <Reveal className="md:col-span-6 md:col-start-7 md:mt-40" delay={100}><ProjectTile p={projects[3]!} index={1} /></Reveal>
+          <Reveal className="md:col-span-7 md:-mt-10"><ProjectTile p={projects[5]!} index={2} className="md:max-w-[80%]" /></Reveal>
+          <Reveal className="md:col-span-4 md:col-start-9 md:mt-24" delay={100}><ProjectTile p={projects[4]!} index={3} /></Reveal>
         </div>
         <div className="mt-20 flex justify-center">
           <Link to="/work" className="display text-h3 link-line italic">Explore all work →</Link>
@@ -121,7 +121,7 @@ function Home() {
 
       {/* Philosophy */}
       <section className="section-dark relative overflow-hidden py-32 md:py-48">
-        <img src={projects[4].cover} alt="" aria-hidden loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-30" />
+        <img src={projects[4]!.cover} alt="" aria-hidden loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-30" />
         <Reveal className="container-x relative text-center">
           <h2 className="display text-hero mx-auto max-w-6xl">Every frame has a <em className="text-ember">feeling.</em></h2>
           <p className="mx-auto mt-10 max-w-xl text-lg text-ivory/80">The aim is not simply to document what happened, but to preserve what it felt like to be there.</p>
@@ -235,7 +235,7 @@ function ServicesSection() {
 export function BookingCTA() {
   return (
     <section className="section-dark relative overflow-hidden py-32 md:py-44">
-      <img src={projects[3].cover} alt="" aria-hidden loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-25" />
+      <img src={projects[3]!.cover} alt="" aria-hidden loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-25" />
       <div className="container-x relative">
         <h2 className="display text-hero">Have a story<br /><em className="text-ember">worth telling?</em></h2>
         <p className="mt-8 max-w-md text-lg text-ivory/80">Let's create something meaningful together.</p>

@@ -9,7 +9,7 @@ const slugs = categories.map((c) => c.slug) as string[];
 
 export const Route = createFileRoute("/work/")({
   validateSearch: (s: Record<string, unknown>): { category?: Category } =>
-    typeof s.category === "string" && slugs.includes(s.category) ? { category: s.category as Category } : {},
+    typeof s["category"] === "string" && slugs.includes(s["category"]) ? { category: s["category"] as Category } : {},
   head: () => ({
     meta: [
       { title: `Work — ${site.name}` },
