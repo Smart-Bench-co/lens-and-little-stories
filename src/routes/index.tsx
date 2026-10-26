@@ -177,10 +177,10 @@ function Home() {
           <h2 className="display text-h3">Recent frames</h2>
           <a href={site.instagram} target="_blank" rel="noreferrer" className="eyebrow link-line">Follow on Instagram ↗</a>
         </div>
-        <div className="mt-10 grid grid-cols-3 gap-1 md:grid-cols-6">
+        <div className="container-x mt-10 grid grid-cols-2 gap-2 sm:grid-cols-3">
           {socialGallery.map((src, i) => (
-            <div key={i} className="aspect-square overflow-hidden bg-muted">
-              <img src={src} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <div key={i} className="group aspect-[4/5] overflow-hidden bg-muted">
+              <img src={src} alt={`Photograph by ${site.name}, ${i + 1}`} loading="lazy" className="img-zoom h-full w-full object-cover group-hover:scale-[1.03]" />
             </div>
           ))}
         </div>

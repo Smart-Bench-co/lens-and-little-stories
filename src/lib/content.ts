@@ -1,3 +1,12 @@
+import g1 from "@/assets/gallery/g1.jpg.asset.json";
+import g2 from "@/assets/gallery/g2.jpg.asset.json";
+import g3 from "@/assets/gallery/g3.jpg.asset.json";
+import g4 from "@/assets/gallery/g4.jpg.asset.json";
+import g5 from "@/assets/gallery/g5.jpg.asset.json";
+import g6 from "@/assets/gallery/g6.jpg.asset.json";
+import g7 from "@/assets/gallery/g7.jpg.asset.json";
+import g8 from "@/assets/gallery/g8.jpg.asset.json";
+import g9 from "@/assets/gallery/g9.jpg.asset.json";
 // All site copy and portfolio data lives here — edit to replace placeholders.
 import hero from "@/assets/hero.jpg";
 import fashion from "@/assets/p-fashion.jpg";
@@ -212,4 +221,4 @@ export const readingTime = (a: Article) =>
 export const formatDate = (d: string) =>
   new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
-export const socialGallery = [documentary, fashion, portrait, travel, wedding, commercial];
+export const socialGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9].map((g) => g.url);
