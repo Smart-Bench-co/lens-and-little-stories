@@ -23,7 +23,7 @@ function Home() {
     <>
       {/* Hero */}
       <section className="section-dark relative h-[100svh] min-h-[560px] overflow-hidden">
-        <img src={images.hero} alt="A man looking over Addis Ababa at golden hour" width={1920} height={1088} className="animate-reveal-img absolute inset-0 h-full w-full object-cover object-[72%_center]" />
+        <img src={images.hero} alt={`${site.name} overlooking Addis Ababa at golden hour`} width={1376} height={768} className="animate-reveal-img absolute inset-0 h-full w-full object-cover object-[72%_center]" />
         <div className="hero-scrim absolute inset-0" />
         <div className="container-x relative flex h-full flex-col justify-end pb-14 md:pb-20">
           <p className="eyebrow animate-rise text-ivory/80" style={{ animationDelay: "900ms" }}>{site.location}</p>
