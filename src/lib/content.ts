@@ -9,13 +9,19 @@ import commercial from "@/assets/p-commercial.jpg";
 import photographer from "@/assets/photographer.jpg";
 
 export const site = {
-  name: "Elias Haile",
-  descriptor: "Photographer & Visual Storyteller",
-  location: "Addis Ababa, Ethiopia",
-  email: "hello@eliashaile.studio",
+  name: "Ketiyeron Solomon",
+  descriptor: "Photographer & Cinematographer",
+  location: "Addis Ababa, Asko",
+  email: "ketiyeron@gmail.com",
+  phone: "0991670751",
+  phoneHref: "tel:+251991670751",
   instagram: "https://instagram.com/",
-  instagramHandle: "@eliashaile",
+  instagramHandle: "",
   availability: "Available for selected projects",
+  intro: "A photographer and cinematographer with experience across podcasts, short films, music videos and weddings — proficient in camera operation, gimbal movement and editing, and dedicated to creating visually compelling stories.",
+  creativity: "A visionary storyteller who uses cinematography to translate abstract concepts into unforgettable visual experiences — through innovative lighting schemes and dynamic framing, where every shot pushes the boundaries of emotional impact and narrative depth.",
+  education: [{ years: "2022–2023", school: "TOM Film School" }],
+  skills: ["Camera operation", "Gimbal movement", "Editing", "Photography", "Problem solving", "Copywriting", "Digital marketing"],
 };
 
 export const images = { hero, photographer };
@@ -140,11 +146,11 @@ export const projects: Project[] = [
 ];
 
 export const services = [
-  { name: "Portrait Photography", description: "Personal, editorial and professional portraits, in studio or on location.", expect: "A relaxed session, considered direction, and a curated edit of finished images." },
-  { name: "Weddings & Celebrations", description: "Documentary coverage of weddings, engagements and family celebrations.", expect: "Unobtrusive coverage that prioritises real moments over staged ones." },
-  { name: "Fashion & Editorial", description: "Imagery for designers, publications and creative teams.", expect: "Concept development, light-led direction and collaboration with your team." },
-  { name: "Commercial & Brand", description: "Campaign, product and lifestyle photography for brands with a story.", expect: "A clear creative plan, licensing agreed upfront, and images built for real use." },
-  { name: "Travel & Documentary", description: "Long-form storytelling for organisations, publications and personal projects.", expect: "Patient fieldwork and a coherent visual narrative." },
+  { name: "Weddings", description: "Photo and film coverage of weddings and celebrations.", expect: "Unobtrusive coverage, smooth gimbal footage, and a carefully edited final story." },
+  { name: "Music Videos", description: "Cinematography for artists, from concept to final cut.", expect: "Creative lighting, dynamic framing and camera movement built around the song." },
+  { name: "Short Films", description: "Camera operation and cinematography for narrative short films.", expect: "Shots designed for emotional impact and narrative depth." },
+  { name: "Podcasts", description: "Multi-camera podcast filming and editing.", expect: "Clean, well-lit setups and an edit ready to publish." },
+  { name: "Photography", description: "Portrait, event and brand photography.", expect: "Considered direction and a curated edit of finished images." },
 ];
 
 export const process = [

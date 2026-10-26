@@ -55,8 +55,9 @@ function Contact() {
         </form>
         <aside className="space-y-8 md:col-span-4 md:col-start-9">
           <div><p className="eyebrow text-muted-foreground">Email</p><a href={`mailto:${site.email}`} className="display link-line mt-2 inline-block text-3xl">{site.email}</a></div>
+          <div><p className="eyebrow text-muted-foreground">Phone</p><a href={site.phoneHref} className="link-line mt-2 inline-block text-lg">{site.phone}</a></div>
           <div><p className="eyebrow text-muted-foreground">Based in</p><p className="mt-2 text-lg">{site.location}</p></div>
-          <div><p className="eyebrow text-muted-foreground">Social</p><a href={site.instagram} target="_blank" rel="noreferrer" className="link-line mt-2 inline-block text-lg">Instagram {site.instagramHandle}</a></div>
+          <div><p className="eyebrow text-muted-foreground">Social</p><a href={site.instagram} target="_blank" rel="noreferrer" className="link-line mt-2 inline-block text-lg">Instagram</a></div>
         </aside>
       </section>
     </>

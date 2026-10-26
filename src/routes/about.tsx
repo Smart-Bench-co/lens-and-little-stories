@@ -26,10 +26,22 @@ function About() {
           <p className="eyebrow mt-4 text-muted-foreground">{site.location}</p>
         </Reveal>
         <Reveal className="space-y-6 text-lg leading-relaxed text-muted-foreground md:col-span-6 md:col-start-7" delay={120}>
-          <p className="display text-h3 text-foreground">I make photographs about people, places, and the quiet moments between them.</p>
-          <p>My work moves between portraiture, editorial, weddings and long-form documentary. The subject changes; the approach doesn't — patient observation, natural light wherever possible, and a respect for the people in front of the camera.</p>
-          <p>I'm inspired by printed photo books, cinema, and the way light falls across a room at the end of the day.</p>
-          <p>I work with individuals, couples, publications and brands who want images that feel considered rather than generic.</p>
+          <p className="display text-h3 text-foreground">Hello, I'm {site.name}.</p>
+          <p>{site.intro}</p>
+          <div className="border-t pt-6">
+            <p className="eyebrow text-ember">Creativity</p>
+            <p className="mt-3">{site.creativity}</p>
+          </div>
+          <div className="grid gap-8 border-t pt-6 sm:grid-cols-2">
+            <div>
+              <p className="eyebrow text-ember">Education</p>
+              {site.education.map((e) => <p key={e.school} className="mt-3"><span className="text-foreground">{e.school}</span><br />{e.years}</p>)}
+            </div>
+            <div>
+              <p className="eyebrow text-ember">Skills</p>
+              <ul className="mt-3 space-y-1">{site.skills.map((k) => <li key={k}>{k}</li>)}</ul>
+            </div>
+          </div>
         </Reveal>
       </section>
       <BookingCTA />

@@ -74,8 +74,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elias Haile — Photographer & Visual Storyteller" },
-      { name: "description", content: "Independent photographer creating thoughtful visual stories." },
+      { title: "Ketiyeron Solomon — Photographer & Cinematographer" },
+      { name: "description", content: "Photographer and cinematographer for weddings, music videos, short films and podcasts in Addis Ababa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

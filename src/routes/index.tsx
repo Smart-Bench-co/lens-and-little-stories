@@ -110,8 +110,7 @@ function Home() {
             <p className="eyebrow text-ember">About</p>
             <h2 className="display text-h2 mt-6">Behind the <em>lens.</em></h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
-              <p>I'm {site.name.split(" ")[0]}, an independent photographer working between portraiture, editorial and documentary.</p>
-              <p>I'm drawn to quiet light, patient observation, and the moments people don't realise they're giving away.</p>
+              <p>Hello, I'm {site.name} — {site.intro.charAt(0).toLowerCase() + site.intro.slice(1)}</p>
             </div>
             <p className="eyebrow mt-8 flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-ember" /> {site.location} — {site.availability}</p>
             <Link to="/about" className="eyebrow link-line mt-8 inline-block">More about me →</Link>
@@ -176,7 +175,7 @@ function Home() {
       <section className="py-24">
         <div className="container-x flex items-end justify-between">
           <h2 className="display text-h3">Recent frames</h2>
-          <a href={site.instagram} target="_blank" rel="noreferrer" className="eyebrow link-line">Follow on Instagram {site.instagramHandle} ↗</a>
+          <a href={site.instagram} target="_blank" rel="noreferrer" className="eyebrow link-line">Follow on Instagram ↗</a>
         </div>
         <div className="mt-10 grid grid-cols-3 gap-1 md:grid-cols-6">
           {socialGallery.map((src, i) => (
@@ -242,6 +241,7 @@ export function BookingCTA() {
         <div className="mt-12 flex flex-wrap items-center gap-8">
           <Link to="/contact" className="eyebrow bg-ember px-8 py-4 text-paper transition-colors hover:bg-ivory hover:text-ink">Start a conversation</Link>
           <a href={`mailto:${site.email}`} className="eyebrow link-line">{site.email}</a>
+          <a href={site.phoneHref} className="eyebrow link-line">{site.phone}</a>
         </div>
         <p className="eyebrow mt-10 text-muted-foreground">{site.availability}</p>
       </div>
