@@ -39,11 +39,17 @@ export function Header() {
       <header
         className={cn(
           "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-          solid ? "bg-background/90 py-3 text-foreground backdrop-blur-md border-b" : "py-6 text-ivory",
+          solid
+            ? "bg-background/90 py-3 text-foreground backdrop-blur-md border-b"
+            : "py-6 text-ivory",
         )}
       >
         <div className="container-x flex items-center justify-between gap-6">
-          <Link to="/" className="group flex flex-col leading-none" aria-label={`${site.name} — home`}>
+          <Link
+            to="/"
+            className="group flex flex-col leading-none"
+            aria-label={`${site.name} — home`}
+          >
             <span className="display text-2xl md:text-[1.7rem]">{site.name}</span>
             <span className="eyebrow mt-1 text-[0.6rem] opacity-70">{site.descriptor}</span>
           </Link>
@@ -59,7 +65,7 @@ export function Header() {
               </Link>
             ))}
             <span className="eyebrow hidden items-center gap-2 opacity-70 lg:flex">
-              <span className="h-1.5 w-1.5 rounded-full bg-ember" aria-hidden /> {site.availability}
+              <span className="h-2 w-2 rounded-full bg-ember" aria-hidden /> {site.availability}
             </span>
           </nav>
           <button
@@ -74,14 +80,28 @@ export function Header() {
       </header>
 
       {open && (
-        <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" className="section-dark fixed inset-0 z-[60] flex flex-col animate-in fade-in duration-300">
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu"
+          className="section-dark fixed inset-0 z-[60] flex flex-col animate-in fade-in duration-300"
+        >
           <div className="container-x flex items-center justify-between py-6">
             <span className="display text-2xl">{site.name}</span>
-            <button className="eyebrow" onClick={() => setOpen(false)} autoFocus>Close</button>
+            <button className="eyebrow" onClick={() => setOpen(false)} autoFocus>
+              Close
+            </button>
           </div>
           <nav aria-label="Mobile" className="container-x mt-10 flex flex-col gap-4">
             {links.map((l, i) => (
-              <Link key={l.to} to={l.to} className="display text-6xl animate-rise" style={{ animationDelay: `${i * 60}ms` }} activeProps={{ className: "text-ember italic" }}>
+              <Link
+                key={l.to}
+                to={l.to}
+                className="display text-6xl animate-rise"
+                style={{ animationDelay: `${i * 60}ms` }}
+                activeProps={{ className: "text-ember italic" }}
+              >
                 {l.label}
               </Link>
             ))}

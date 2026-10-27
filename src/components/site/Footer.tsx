@@ -21,6 +21,8 @@ export function Footer() {
           <a href={`mailto:${site.email}`} className="link-line w-fit">{site.email}</a>
           <a href={site.phoneHref} className="link-line w-fit">{site.phone}</a>
           <a href={site.instagram} target="_blank" rel="noreferrer" className="link-line w-fit">Instagram</a>
+          <a href={site.Telegram} target="_blank" rel="noreferrer" className="link-line w-fit">Telegram</a>
+
         </div>
       </div>
       <div className="container-x flex justify-between border-t py-6 eyebrow text-muted-foreground">

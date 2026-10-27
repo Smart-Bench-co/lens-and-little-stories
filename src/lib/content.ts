@@ -1,12 +1,13 @@
-import g1 from "@/assets/gallery/g1.jpg.asset.json";
-import g2 from "@/assets/gallery/g2.jpg.asset.json";
-import g3 from "@/assets/gallery/g3.jpg.asset.json";
-import g4 from "@/assets/gallery/g4.jpg.asset.json";
-import g5 from "@/assets/gallery/g5.jpg.asset.json";
-import g6 from "@/assets/gallery/g6.jpg.asset.json";
-import g7 from "@/assets/gallery/g7.jpg.asset.json";
-import g8 from "@/assets/gallery/g8.jpg.asset.json";
-import g9 from "@/assets/gallery/g9.jpg.asset.json";
+import g1 from "@/assets/gallery/g1.jpg"
+import g2 from "@/assets/gallery/g2.jpg"
+import g3 from "@/assets/gallery/g3.jpg"
+import g4 from "@/assets/gallery/g4.jpg"
+import g5 from "@/assets/gallery/g5.jpg"
+import g6 from "@/assets/gallery/g6.jpg"
+import g7 from "@/assets/gallery/g7.jpg"
+import g8 from "@/assets/gallery/g8.jpg"
+import g9 from "@/assets/gallery/g9.jpg"
+
 // All site copy and portfolio data lives here — edit to replace placeholders.
 import hero from "@/assets/hero.jpg";
 import fashion from "@/assets/p-fashion.jpg";
@@ -16,7 +17,46 @@ import wedding from "@/assets/p-wedding.jpg";
 import travel from "@/assets/p-travel.jpg";
 import commercial from "@/assets/p-commercial.jpg";
 import photographer from "@/assets/photographer.jpg";
+import photographer2 from "@/assets/p-commercial2.jpg";
+import photographer3 from "@/assets/p-commercial3.jpg";
+import photographer4 from "@/assets/p-commercial4.jpg";
+import photographer5 from "@/assets/p-commercial5.jpg";
+import photographer6 from "@/assets/p-commercial6.jpg";
+import photographer7 from "@/assets/p-commercial7.jpg";
+import photographer8 from "@/assets/p-commercial8.jpg";
+import photographer9 from "@/assets/p-commercial9.jpg";
+import photographer_1 from "@/assets/p-commercial_1.jpg";
+import portrait1 from "@/assets/portrait1.jpg";
+import portrait2 from "@/assets/portrait2.jpg";
+import portrait3 from "@/assets/portrait3.jpg";
+import portrait4 from "@/assets/portrait4.jpg";
+import portrait5 from "@/assets/portrait5.jpg";
+import portrait6 from "@/assets/portrait6.jpg";
+import portrait7 from "@/assets/portrait7.jpg";
+import portrait8 from "@/assets/portrait8.jpg";
+import portrait9 from "@/assets/portrait9.jpg";
+import morning1 from "@/assets/p-travel.jpg";
+import morning2 from "@/assets/morning.jpg";
+import morning3 from "@/assets/morning1.jpg";
+import morning4 from "@/assets/morning3.jpg";
+import morning5 from "@/assets/morning5.jpg";
+import morning6 from "@/assets/morning6.jpg";
+import melat1 from "@/assets/melat.jpg"
+import melat2 from "@/assets/melat2.jpg"
+import melat3 from "@/assets/melat3.jpg"
+import melat4 from "@/assets/melat4.jpg"
+import melat5 from "@/assets/melat5.jpg"
+import melat6 from "@/assets/melat6.jpg"
+import melat7 from "@/assets/melat7.jpg"
+import melat8 from "@/assets/melat8.jpg"
+import melat9 from "@/assets/melat9.jpg"
+import melat10 from "@/assets/melat10.jpg"
+import melat11 from "@/assets/melat11.jpg"
+import melat12 from "@/assets/melat12.jpg"
+import g91 from "@/assets/g9.jpg"
+import video from "@/assets/Matiwos & Melat 1.mp4"
 
+// I skipped the imports but all the necessary imports are there.
 export const site = {
   name: "Ketiyeron Solomon",
   descriptor: "Photographer & Cinematographer",
@@ -24,8 +64,10 @@ export const site = {
   email: "ketiyeron@gmail.com",
   phone: "0991670751",
   phoneHref: "tel:+251991670751",
-  instagram: "https://instagram.com/",
+  instagram: "https://instagram.com/keti40058",
   instagramHandle: "",
+  Telegram : "https://t.me/lionproduction1000",
+  TelegramHandle: "Lion Production",
   availability: "Available for selected projects",
   intro: "A photographer and cinematographer with experience across podcasts, short films, music videos and weddings — proficient in camera operation, gimbal movement and editing, and dedicated to creating visually compelling stories.",
   creativity: "A visionary storyteller who uses cinematography to translate abstract concepts into unforgettable visual experiences — through innovative lighting schemes and dynamic framing, where every shot pushes the boundaries of emotional impact and narrative depth.",
@@ -44,12 +86,9 @@ export type Category =
   | "commercial";
 
 export const categories: { slug: Category; name: string; description: string; image: string }[] = [
-  { slug: "portraits", name: "Portraits", description: "Quiet, honest studies of people.", image: portrait },
+  { slug: "portraits", name: "Portraits", description: "Quiet, honest studies of people.", image: portrait4 },
   { slug: "fashion", name: "Fashion & Editorial", description: "Light, form and movement for the page.", image: fashion },
-  { slug: "weddings", name: "Weddings & Celebrations", description: "The unposed hours of a day that matters.", image: wedding },
-  { slug: "documentary", name: "Documentary", description: "Everyday life, observed patiently.", image: documentary },
-  { slug: "travel", name: "Travel & Landscape", description: "Places at the edge of the map.", image: travel },
-  { slug: "commercial", name: "Commercial & Brand", description: "Imagery with a point of view.", image: commercial },
+  { slug: "weddings", name: "Weddings & Celebrations", description: "The unposed hours of a day that matters.", image: wedding }
 ];
 
 export type Project = {
@@ -65,92 +104,108 @@ export type Project = {
   gallery: string[];
 };
 
+
 export const projects: Project[] = [
   {
-    slug: "rust-and-stone",
-    title: "Rust & Stone",
-    category: "fashion",
-    year: 2026,
-    location: "Lalibela",
-    cover: fashion,
-    ratio: "portrait",
-    summary: "An editorial built on hard noon light and a single colour.",
-    story: [
-      "We worked only between eleven and one, when the sun sits directly overhead and shadows become graphic shapes rather than soft gradients.",
-      "The wardrobe was reduced to a single rust tone so that the stone, the fabric and the light could carry the entire story.",
-    ],
-    gallery: [fashion, commercial, portrait],
-  },
-  {
-    slug: "the-morning-market",
-    title: "The Morning Market",
-    category: "documentary",
-    year: 2025,
-    location: "Simien Highlands",
-    cover: documentary,
-    ratio: "landscape",
-    summary: "Three dawns spent among traders arriving before the mist lifts.",
-    story: [
-      "The market begins in darkness. By the time the first light reaches the valley floor, most of the day's trade is already done.",
-      "I returned on three consecutive mornings, so that by the third, nobody was looking at the camera anymore.",
-    ],
-    gallery: [documentary, travel, portrait],
-  },
-  {
-    slug: "window-light",
-    title: "Window Light",
+    slug: "chruch-shoots",
+    title: "Church Shoots",
     category: "portraits",
     year: 2025,
     location: "Addis Ababa",
     cover: portrait,
     ratio: "portrait",
-    summary: "A series of portraits made with a single window and no flash.",
+    summary:
+      "Sacred moments of worship, prayer, and devotion captured during live church programs.",
     story: [
-      "Each sitting lasted as long as a cup of coffee. One window, one chair, and a conversation that slowly forgot the camera.",
+      "Amid prayers, hymns, and raised hands, each frame reflects the quiet faith and spiritual devotion woven into Ethiopian church life.",
     ],
-    gallery: [portrait, photographer, fashion],
+    gallery: [
+      portrait,
+      portrait7,
+      portrait4,
+      portrait1,
+      portrait3,
+      g91,
+      portrait2,
+      portrait5,
+      portrait6,
+      portrait7,
+      portrait8,
+      portrait9,
+    ],
   },
   {
-    slug: "under-the-lights",
-    title: "Under the Lights",
+    slug: "T&M-wedding",
+    title: "T & M Wedding",
     category: "weddings",
-    year: 2024,
-    location: "Bishoftu",
+    year: 2026,
+    location: "Ashewa Meda",
     cover: wedding,
     ratio: "landscape",
-    summary: "A garden wedding that only truly began after sunset.",
+    summary:
+      "An Ethiopian wedding filled with blessings, family, tradition, and a love celebrated beneath the evening lights.",
     story: [
-      "The ceremony was beautiful, but the story was on the lawn after dark, when the string lights came on and nobody was performing anymore.",
+      "From heartfelt blessings to joyful dancing, every moment carried the warmth of family, the beauty of tradition, and the promise of a shared life.",
     ],
-    gallery: [wedding, documentary, commercial],
+    gallery: [
+      wedding,
+      documentary,
+      photographer9,
+      commercial,
+      photographer2,
+      photographer3,
+      photographer4,
+      photographer5,
+      photographer6,
+      photographer7,
+      photographer_1,
+    ],
   },
   {
-    slug: "salt-roads",
-    title: "Salt Roads",
-    category: "travel",
-    year: 2024,
-    location: "Danakil Depression",
+    slug: "wedding-memories",
+    title: "Wedding Frames",
+    category: "weddings",
+    year: 2025,
+    location: "Addis Abeba",
     cover: travel,
-    ratio: "portrait",
-    summary: "Following a caravan across one of the hottest places on earth.",
+    ratio: "landscape",
+    summary:
+      "A summer wedding celebrating enduring love, family blessings, and the joyful spirit of Ethiopian tradition.",
     story: [
-      "We walked with the caravan before dawn, when the salt is still cool and the sky turns the colour of the inside of a shell.",
+      "Surrounded by loved ones, the couple began their journey with prayers, embraces, and the vibrant celebration of two families becoming one.",
+      "From tender glances to joyful dancing, every photograph preserves the warmth, faith, and memories of their special day.",
     ],
-    gallery: [travel, documentary, hero],
+    gallery: [morning1, morning2, morning6, morning4, morning5, morning3,travel],
   },
   {
-    slug: "the-ceremony",
-    title: "The Ceremony",
-    category: "commercial",
-    year: 2023,
-    location: "Studio, Addis Ababa",
-    cover: commercial,
-    ratio: "square",
-    summary: "A campaign built around the ritual of coffee.",
+    slug: "M&M-wedding",
+    title: "Melat & Mati's Wedding",
+    category: "fashion",
+    year: 2025,
+    location: "Jemo Micheal",
+    cover: melat7,
+    ratio: "portrait",
+    summary:
+      "Melat and Matiyas celebrate a sacred union shaped by love, family blessings, and Ethiopian wedding traditions.",
     story: [
-      "The brief asked for warmth and patience. We built a set from a single table and let the steam do the rest.",
+      "Their day brought together two families in a celebration of devotion, tradition, and the blessing of a life shared together.",
+      "Through quiet glances, heartfelt embraces, and joyful celebration, each frame preserves the beauty and meaning of their beginning.",
     ],
-    gallery: [commercial, fashion, portrait],
+    gallery: [
+      
+      melat7,
+      melat2,
+      melat3,
+      melat7,
+      melat5,
+      melat6,
+      melat7,
+      melat8,
+      melat9,
+      melat10,
+      melat11,
+      melat12,
+    ],
   },
 ];
 
@@ -178,39 +233,43 @@ export type Article = {
   body: string[];
 };
 
+
 export const articles: Article[] = [
   {
-    slug: "a-cup-of-coffee-long",
-    title: "A portrait session the length of a cup of coffee",
+    slug: "Faith in Every Frame",
+    title: "Faith in Every Frame",
     date: "2026-08-14",
-    cover: portrait,
-    excerpt: "Why I keep portrait sittings short, quiet and unhurried.",
+    cover: portrait4,
+    excerpt:
+      "Finding the beauty of faith in Ethiopian worship, quiet prayers, and sacred moments.",
     body: [
-      "Most of the portraits I care about were made in the last five minutes of a session, after everyone had relaxed.",
-      "So I started designing sessions around that moment: one window, one chair, and no more time than it takes to finish a coffee together.",
-      "The constraint does something useful. Nobody has time to perform, and so they stop trying.",
+      "Some of the most meaningful moments happen between prayers, when the church grows quiet and faith speaks without words.",
+      "Through the camera, I began to notice the details: hands lifted in worship, faces filled with devotion, and the gentle light falling across a place of prayer.",
+      "Photography became more than documenting a moment. It became a way to preserve the faith, hope, and spiritual beauty woven into everyday Ethiopian church life.",
     ],
   },
   {
-    slug: "notes-from-the-salt-flats",
-    title: "Notes from the salt flats",
+    slug: "Where Tradition Meets Blessing",
+    title: "Where Tradition Meets Blessing",
     date: "2026-03-02",
     cover: travel,
-    excerpt: "A short diary from four days walking with a salt caravan.",
+    excerpt:
+      "A reflection on Ethiopian wedding traditions, family blessings, and the beginning of a shared life.",
     body: [
-      "Day one: the heat arrives before the sun does. We start walking at three in the morning.",
-      "Day three: I have stopped trying to photograph the landscape. It is too big. I photograph the rope between two camels instead.",
+      "Every Ethiopian wedding carries a story beyond the couple: the prayers of parents, the gathering of families, and traditions passed from one generation to the next.",
+      "Through every embrace, blessing, and joyful dance, I found more than beautiful photographs. I found the meaning of belonging, faith, and a love celebrated by an entire community.",
     ],
   },
   {
-    slug: "working-with-hard-light",
-    title: "Learning to love hard light",
+    slug: "The Beauty of Sacred Light",
+    title: "The Beauty of Sacred Light",
     date: "2025-11-20",
     cover: fashion,
-    excerpt: "Notes on shooting at noon, and why I stopped waiting for golden hour.",
+    excerpt:
+      "Discovering how light, shadow, and stillness can reveal the beauty of a moment.",
     body: [
-      "Hard light is honest. It shows texture, makes shapes, and refuses to flatter.",
-      "On Rust & Stone, we leaned into it entirely — and the shadows became part of the wardrobe.",
+      "Light has a language of its own. It falls across faces, reveals quiet details, and turns ordinary moments into something unforgettable.",
+      "In Ethiopian churches and celebrations, I learned to embrace the light as it comes, allowing every shadow and ray to tell its own story of faith, culture, and human connection.",
     ],
   },
 ];
@@ -221,4 +280,18 @@ export const readingTime = (a: Article) =>
 export const formatDate = (d: string) =>
   new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
-export const socialGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9].map((g) => g.url);
+// export const socialGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9]
+export const socialGallery = [
+  "src/assets/gallery/g10.jpg",
+
+  "src/assets/gallery/g2.jpg",
+  "src/assets/gallery/g3.jpg",
+  "src/assets/gallery/g4.jpg",
+  "src/assets/gallery/g5.jpg",
+  "src/assets/gallery/g6.jpg",
+  "src/assets/gallery/g7.jpg",
+  "src/assets/gallery/g8.jpg",
+  "src/assets/gallery/g9.jpg",
+  "src/assets/gallery/g1.jpg",
+
+];
