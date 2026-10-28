@@ -280,18 +280,19 @@ export const readingTime = (a: Article) =>
 export const formatDate = (d: string) =>
   new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
-// export const socialGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9]
-export const socialGallery = [
-  "src/assets/gallery/g10.jpg",
+export const socialGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9]
+// export const socialGallery = [
+//   "src/assets/gallery/g10.jpg",
 
-  "src/assets/gallery/g2.jpg",
-  "src/assets/gallery/g3.jpg",
-  "src/assets/gallery/g4.jpg",
-  "src/assets/gallery/g5.jpg",
-  "src/assets/gallery/g6.jpg",
-  "src/assets/gallery/g7.jpg",
-  "src/assets/gallery/g8.jpg",
-  "src/assets/gallery/g9.jpg",
-  "src/assets/gallery/g1.jpg",
+//   "src/assets/gallery/g2.jpg",
+//   "src/assets/gallery/g3.jpg",
+//   "src/assets/gallery/g4.jpg",
+//   "src/assets/gallery/g5.jpg",
+//   "src/assets/gallery/g6.jpg",
+//   "src/assets/gallery/g7.jpg",
+//   "src/assets/gallery/g8.jpg",
+//   "src/assets/gallery/g9.jpg",
+//   "src/assets/gallery/g1.jpg",
 
-];
+
+// ];
